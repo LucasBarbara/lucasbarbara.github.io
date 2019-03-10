@@ -25,6 +25,14 @@ h2 ~ p {
 }
 
 /* Header Styles */
+.header {
+
+  background-color: #aaa;
+  height: 300px;
+  position: relative;
+  width: 100%;
+}
+
 .header-nav {
 
   float: right;
@@ -72,6 +80,15 @@ h2 ~ p {
 .header-nav > li:first-child a:hover {
 
   color: #000;
+}
+
+.header-logo {
+
+  background-color: #000;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Hero Styles */
