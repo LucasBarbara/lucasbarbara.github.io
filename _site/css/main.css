@@ -24,11 +24,20 @@ h2 ~ p {
   text-align: center;
 }
 
-/* Header Styles */
+html {
+
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
+}
+
+/* HEADER STYLES */
 .header {
 
   background-color: #000;
   color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
 }
 
 .header-logo {
@@ -37,6 +46,7 @@ h2 ~ p {
   box-sizing: border-box;
   display: block;
   height: 10vh;
+  left: -30px;
   padding-top: 10px;
   position: relative;
   text-align: center;
@@ -75,14 +85,18 @@ h2 ~ p {
 .header-nav a {
 
   color: #fff;
+}
+
+.nav-links a {
+
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.header-nav a:hover,
-.header-nav a:active {
+.nav-links a:hover,
+.nav-links a:active {
 
   color: #ed6e2f;
 }
@@ -97,9 +111,42 @@ h2 ~ p {
   color: #fff;
 }
 
+/* FOOTER STYLES */
 
+.footer {
 
+  background-color: #000;
+  padding: 10vh 0 15vh;
+  text-align: center;
+}
 
+.footer-logo img {
+
+  width: 50px;
+}
+
+.footer h3 {
+
+  color: #fff;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+
+.footer h3 span {
+
+  color: #aaa;
+}
+
+.footer-nav li {
+
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+
+.footer-nav a {
+
+  color: #ccc;
+}
 
 /* Hero Styles */
 
@@ -109,7 +156,8 @@ h2 ~ p {
   height: 50vh;
 }
 
-/* Social Styles */
+/* SOCIAL STYLES */
+
 .social-link {
 
   background: rgba(150, 150, 150, 0.5);
@@ -141,7 +189,7 @@ h2 ~ p {
   margin: 0 0.5em;
 }
 
-/* Bio Styles */
+/* BIO STYLES */
 
 .bio-box {
 
@@ -152,30 +200,6 @@ h2 ~ p {
   margin: 40px 1% 0;
   padding: 2%;
   width: 23%;
-}
-
-.bio-copy {
-
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-.bio-wrapper {
-
-  font-size: 24px;
-  margin: auto;
-  max-width: 960px;
-  overflow: hidden;
-}
-
-.bio-wrapper:after {
-
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
 }
 
 .bio-box h3 {
@@ -197,6 +221,20 @@ h2 ~ p {
   margin: 2em 0 1em;
 }
 
+.bio-copy {
+
+  font-size: 1em;
+  line-height: 1.5;
+}
+
 .bio-copy a {
   color: #0f0;
+}
+
+.bio-wrapper {
+
+  font-size: 24px;
+  margin: auto;
+  max-width: 960px;
+  overflow: hidden;
 }
