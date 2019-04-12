@@ -415,10 +415,10 @@ p {
 }
 
 .col-three .col-nav {
-
+  
   flex: 0 1 15em;
-}
-
+  }
+  
 .col-three .col-content {
 
   flex: 1;
